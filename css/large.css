@@ -1,0 +1,74 @@
+#home-carousel .item {
+    width:50%;
+}
+
+#menu .icon-Nesea_Logo_RGB,#menuS .icon-Nesea_Logo_RGB {
+    font-size: 30px;
+}
+
+.column {
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+#main-nav li {
+    width: 25%;
+}
+
+#menu  li,#menuS  li {
+    margin: 0 20px;    
+}
+
+.i-top {
+    font-size: 380px;
+}
+.i-bottom {
+    font-size: 380px;
+}
+
+#menu  ul {
+    margin-right: 0px;
+}
+
+.mcslider-page-dots .dot {
+    width: 20%;
+}
+
+.dialog-info .title {
+    float: left;
+    width: 40% !important;
+    color: #828282;
+    text-align: left;
+    line-height: 47px;
+}
+
+.dialog-info .dialog-info-buttons {
+    float: right;
+    width: 60%;
+    margin-top: 0;
+}
+
+.i-bottom {
+    
+    width: 380px;
+}
+
+#home-carousel .text {
+    left: 75%;
+}
+#home-carousel .item.slick-active .icona-nesea {
+    left: 66%;
+}
+
+#text-home {
+    left: 40%;
+}
+
+#text-home h1 {
+    margin-bottom: 40px;    
+	font-size:48px;
+	line-height:56px;    
+}
+#text-home {
+    padding-right: 0px;
+}

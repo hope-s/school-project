@@ -1,0 +1,64 @@
+#animation-container {
+    height: 100px;
+    width: 100px;
+    position: relative;
+    margin: 0 auto;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#glowstick {
+    background-color: deeppink;
+    height: 40px;
+    width: 3px;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    opacity: 0;
+    -webkit-transform-origin: bottom center;
+    transform-origin: bottom center;
+    -webkit-animation: spin 1.2s infinite;
+    animation: spin 1.2s infinite;
+    box-shadow: -1px 0px 30px 1px deeppink;
+}
+
+@-webkit-keyframes spin {
+
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        -webkit-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+        transform: rotate(360deg);
+        -moz-transform: rotate(360deg);
+        -o-transform: rotate(360deg);
+}
+}
+
+@keyframes spin {
+
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        -webkit-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+#preloader {
+    position: fixed;
+    background: white;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1001;
+}

@@ -1,0 +1,35 @@
+@media only screen 
+and (orientation : portrait) {
+
+
+	
+
+}                   
+    
+
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 812px) 
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: landscape) { 
+
+
+    #menuS {
+        padding: 15px 20px;
+    }      
+      
+      
+    .section {
+        padding-left: env(safe-area-inset-left);
+        padding-right: env(safe-area-inset-right);
+      }      
+      
+    #mappa {
+        margin-left: calc(env(safe-area-inset-left) * -1);
+    }      
+      
+    #home .section {
+        left: calc(env(safe-area-inset-left) * -1);
+        width: 100vw;
+    }  
+}

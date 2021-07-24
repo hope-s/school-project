@@ -1,0 +1,8 @@
+#home-carousel .item.slick-active .icona-nesea {
+    left: 60%;
+    transition: left 1s ease;
+}
+
+#home-carousel .text {
+    left: 70%;
+}

@@ -1,0 +1,42 @@
+.section.t {
+    margin-top: -130px;
+}
+
+.section.tt {
+    margin-top: -210px;
+}
+
+.section.mc {
+    padding: 180px 0;
+    padding-bottom: 360px;
+}
+
+.section.mcs {
+    padding: 180px 0;
+    padding-bottom: 400px;
+}
+
+#corsi {
+    margin-top: -210px;
+}
+
+#catalogo, #metodo {
+    padding-top: 80px;
+    padding-bottom: 300px;
+}
+
+.withbg:before {
+    top: -80px;
+}
+
+#edizioni-precedenti {
+    padding-bottom: 180px;
+}
+
+#pre-footer {
+    margin-top: 0;
+}
+
+#testimonianze {
+    margin-top: -80px;
+}
