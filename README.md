@@ -4,4 +4,4 @@
 
 my project
 
-- [rtl-top](<a href="http://rtl-top.ir" target="_blank"></a>)
+- [rtl-top.ir](http://rtl-top.ir)
