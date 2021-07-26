@@ -274,13 +274,15 @@ jQuery(document).ready(function($) {
     items: 1,
     animateOut: 'fadeOut',
     loop: true,
-    margin: 10,
+    margin: 40,
   });
   $('.custom1').owlCarousel({
     animateOut: 'slideOutDown',
     animateIn: 'flipInX',
     items: 1,
     margin: 30,
+    autoHeightClass: 'owl-height',
+    autoHeight:true,
     stagePadding: 30,
     smartSpeed: 450
   });
