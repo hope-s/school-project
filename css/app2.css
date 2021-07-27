@@ -2999,7 +2999,6 @@ input[type=text]:placeholder {
 	 height: 20rem;
 	 position: relative;
 	 overflow: hidden;
-	 box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.2);
 }
  .card .wrapper-new:hover .data {
 	 transform: translateY(-20%);
@@ -3016,6 +3015,7 @@ input[type=text]:placeholder {
 	 -moz-transform: translateY(30%);
 	 -ms-transform: translateY(30%);
 	 -o-transform: translateY(30%);
+     box-shadow: 0px 7px 10px rgb(0 0 0 / 50%) !important;
 }
  .card .data .content {
      padding: 1em;
