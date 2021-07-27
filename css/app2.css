@@ -35,7 +35,6 @@ html {
 body {
     direction: rtl;
     overflow-x: hidden !important;
-
 }
 
 #body.loading .container {

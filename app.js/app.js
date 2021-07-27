@@ -56,9 +56,9 @@ jQuery(document).ready(function ($) {
     if (url == "#IT") t = 150;
     else t = 100;
 
-    $('html, body').animate({
-      scrollTop: $($(this).attr("href")).offset().top - t
-    }, 500, "easeInOutExpo");
+    // $('html, body').animate({
+    //   scrollTop: $($(this).attr("href")).offset().top - t
+    // }, 500, "easeInOutExpo");
   });
 
   $(".dialogCorso .close,#backCover").click(function () {
