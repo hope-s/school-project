@@ -495,10 +495,10 @@ p.min {
 }
 
 #commentbox {
-    background: url('../img/comment-bg.jpg') no-repeat;
+    background: url('../img/comment-bg.jpg');
     background-size: contain;
     background-position: center;
-    background-repeat: no-repeat;
+    background-repeat: no-repeat !important;
     overflow: hidden !important;
 }
 
@@ -517,6 +517,12 @@ p.min {
     }
 }
 
+.facilities_h2{
+    position: relative !important; 
+    z-index: 999 !important;
+    text-align: center !important;
+    padding: 15px !important;
+}
 
 .mcbutton {
     background: #fff;
@@ -867,7 +873,12 @@ p.min {
     display: inline;
 }
 
-
+@media screen and (max-width: 650px){
+    
+    #news img{
+        max-width: 50%;
+    }
+}
 
 .dialog-content {
     padding: 30px;
@@ -1884,10 +1895,10 @@ a[data-fancybox] img {
     overflow: hidden;
     text-align: center;
     padding: 2.5rem;
+    border: 1px solid #ec008c;
     transition: all cubic-bezier(0.215, 0.610, 0.355, 1) 0.9s;
     background: linear-gradient(130deg, rgba(251, 251, 254, .6), rgba(251, 251, 254, .2));
-    /*box-shadow: inset 2px 2px 1px rgba(251,251,254,.3)              inset -2px -2px 1px rgba(251,251,254,.2);
-  */
+    /* box-shadow: inset 2px 2px 1px rgba(251,251,254,.3)              inset -2px -2px 1px rgba(251,251,254,.2); */
     border-radius: 1.5rem;
     backdrop-filter: blur(10px);
     -webkit-transition: all cubic-bezier(0.215, 0.610, 0.355, 1) 0.9s;
@@ -1896,20 +1907,22 @@ a[data-fancybox] img {
     -o-transition: all cubic-bezier(0.215, 0.610, 0.355, 1) 0.9s;
 }
 
-.card__data {
-    margin-bottom: 1.5rem;
+@media only screen and (max-width: 768px){
+    .card__data {
+        margin-bottom: 1.5rem;
+        margin-top: 1.5rem;
+    }
 }
 
 .card__title {
-    font-size: var(--h3-font-size);
-    color: var(--title-color);
+    color: #000 !important;
     font-weight: 600;
     margin-bottom: .25rem;
 }
 
 .card__profession {
     font-size: var(--small-font-size);
-    color: var(--text-color);
+    color: #000 !important;
     font-weight: 500;
 }
 
@@ -2684,11 +2697,11 @@ a.slide_btn {
     -ms-border-radius: 5px;
     -o-border-radius: 5px;
     margin: 5px;
-    transition: all 0.5s;
-    -webkit-transition: all 0.5s;
-    -moz-transition: all 0.5s;
-    -ms-transition: all 0.5s;
-    -o-transition: all 0.5s;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    -webkit-transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    -moz-transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    -ms-transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    -o-transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
 .btn-hover-blue:hover{
@@ -2708,11 +2721,11 @@ a.slide_btn {
     -ms-border-radius: 5px;
     -o-border-radius: 5px;
     margin: 5px;
-    transition: all 0.5s;
-    -webkit-transition: all 0.5s;
-    -moz-transition: all 0.5s;
-    -ms-transition: all 0.5s;
-    -o-transition: all 0.5s;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    -webkit-transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    -moz-transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    -ms-transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    -o-transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
 .btn-hover-danger:hover{
@@ -2732,11 +2745,11 @@ a.slide_btn {
     -ms-border-radius: 5px;
     -o-border-radius: 5px;
     margin: 5px;
-    transition: all 0.5s;
-    -webkit-transition: all 0.5s;
-    -moz-transition: all 0.5s;
-    -ms-transition: all 0.5s;
-    -o-transition: all 0.5s;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    -webkit-transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    -moz-transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    -ms-transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    -o-transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
 .btn-hover-seccess:hover{
