@@ -66,12 +66,12 @@
 </head>
 <body id="body" class="home blog d loading">
 
-<div class="preloader">
+<!-- <div class="preloader">
     <div id="loader"></div>
     <div class="preloader_inner">1%</div>
     <img class="preloader-h1-sajjeo" src="img/preloader-image.jpg">
     <p class="preloader-h2-sajjeo"> Wwww.noavaran.ir </p>
-</div>
+</div> -->
 
     <input type="hidden" id="pag">
 
@@ -87,7 +87,7 @@
                     <li><a class="hvr-underline-from-center" href="#">  درباره مدرسه </a></li>
                     <li><a class="hvr-underline-from-center" href="#"> خانه  </a></li>
                 </ul>
-                <a href="javascript:void(0)" class="icon-cross close_menu  bi bi-x"></a>
+            <a href="javascript:void(0)" class="icon-cross close_menu  bi bi-x"></a>
             </div>
         </nav>  
 
@@ -502,17 +502,69 @@
             <div class="section">
                 <div class="row content-section" style="text-align: right;">
                     <div class="row corso">
-                        <div class="corso-content reverse column small-centered medium-10">
-                            <div class="corso-testo">
-                                <h2> اخبار </h2>
-                            </div>
-                            <div class="corso-image width-m-50">
-                                <img src="img/PM.png"/> 
-                            </div>
+                        <div class="news-testo">
+                            <h2> اخبار </h2>
+                            <div style="display: flex; justify-content: center; flex-wrap: wrap;">
 
+                                <div class="example-2 card">
+                                    <div class="wrapper-new corso-testo">
+                                        <div class="header">
+                                            <a href="javascript:void(0)" data-dialog="news_1" class="mcbutton button read-btn"> ادامه مطلب </a>
+                                            <ul class="menu-content">
+                                                <li>
+                                                    <a href="#" class="fa fa-bookmark-o"></a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="data">
+                                            <div class="content">
+                                                <span class="author"> 12 شهریور </span>
+                                                <h1 class="title"><a href="#">مژده به اهالی منطقه‌‌ی 6! شعبه‌ی جدید مدارس دخترانه‌ی سلام افتتاح شد؛ دبستان دخترانه‌ی سلام مهتاب واقع در خیابان جهان‌آرا در منطقه‌ی یوسف آباد فعالیت</a></h1>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+    
+                                <div class="example-2 card">
+                                    <div class="wrapper-new corso-testo">
+                                        <div class="header">
+                                            <a href="javascript:void(0)" data-dialog="news_2" class="mcbutton button read-btn"> ادامه مطلب  </a>
+                                            <ul class="menu-content">
+                                                <li>
+                                                    <a href="#" class="fa fa-bookmark-o"></a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="data">
+                                            <div class="content">
+                                                <span class="author"> 12 اریبهشت </span>
+                                                <h1 class="title"><a href="#">برگزاری جشن قرآن در دبستان سلام ایران زمین</a></h1>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+    
+                                <div class="example-2 card">
+                                    <div class="wrapper-new corso-testo">
+                                        <div class="header">
+                                            <a href="javascript:void(0)" data-dialog="news_3" class="mcbutton button read-btn"> ادامه مطلب  </a>
+                                            <ul class="menu-content">
+                                                <li>
+                                                    <a href="#" class="fa fa-bookmark-o"></a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="data">
+                                            <div class="content">
+                                                <span class="author"> 12 شهریور </span>
+                                                <h1 class="title"><a href="#">تبریک سال نو از طرف مدیر عامل مجموعه مدارس سلام</a></h1>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
-
                 </div>
             </div>
         </div>
@@ -1097,8 +1149,8 @@
     <div id="backCover" class=""></div>
     <!--DIALOG CORSO-->
 
-    <div class="dialogCorso " id="c1">
-        <i class="close bi bi-x" data-id="c1"></i>
+    <div class="dialogCorso" id="news_1">
+        <i class="close bi bi-x" data-id="news_1"></i>
         <div class="dialog-content">
             <span class="title" style="color:#4f4f4f"> چه رشته ای برای ادامه تحصیل انتخاب کنم؟ </span>
             <div class="row">
@@ -1126,8 +1178,8 @@
         </div>
     </div>
 
-    <div class="dialogCorso " id="c2">
-        <i class="close bi bi-x" data-id="c2"></i>
+    <div class="dialogCorso " id="news_2">
+        <i class="close bi bi-x" data-id="news_2"></i>
         <div class="dialog-content">
             <span class="title" style="color:#4f4f4f"> به چه چیزی علاقه دارم </span>
             <div class="row">
@@ -1155,18 +1207,17 @@
         </div>
     </div>
 
-
-    <div class="dialogCorso " id="c3">
-        <i class="close bi bi-x" data-id="c3"></i>
+    <div class="dialogCorso " id="news_3">
+        <i class="close bi bi-x" data-id="news_3"></i>
         <div class="dialog-content">
-            <span class="title" style="color:#4f4f4f"> چطور ادامه تحصیل بدم </span>
+            <span class="title" style="color:#4f4f4f"> به چه چیزی علاقه دارم </span>
             <div class="row">
                 <div class="column medium-8 dialog-left">
                     <div style="color:#a3a3a3">
                         <span class="title" style="color:#eb008c"> نوشته شده در: </span> 21 مهر 1399 <span
-                            <!-- class="title due" style="color:#eb008c"></span></div>
+                            class="title due" style="color:#eb008c"></span></div>
                     <div class="dialog-contentcontent" style="color:#828282">
-                        توضیحات چطور ادامه تحصیل بدم
+                        به چه چیزی علاقه دارم توضیحات
                     </div>
                 </div>
                 <div class="column medium-4 dialog-right">
@@ -1184,212 +1235,6 @@
             </div>
         </div>
     </div>
-
-    <div class="dialogCorso " id="c2">
-        <i class="close bi bi-x" data-id="c2"></i>
-        <div class="dialog-content">
-            <span class="title" style="color:#4f4f4f"> چطور ادامه تحصیل بدم </span>
-            <div class="row">
-                <div class="column medium-8 dialog-left">
-                    <div style="color:#a3a3a3">
-                        <span class="title" style="color:#eb008c"> نوشته شده در: </span> 21 مهر 1399 <span
-                            <!-- class="title due" style="color:#eb008c"></span></div>
-                    <div class="dialog-contentcontent" style="color:#828282">
-                        چطور ادامه تحصیل بدم
-                    </div>
-                </div>
-                <div class="column medium-4 dialog-right">
-                    <!-- <span class="title" style="color:#eb008c"></span> -->
-                    <div class="dialog-contentcontent">
-                        <a href="#"> علی محمدی </a> </div>
-                </div>
-
-            </div>
-        </div>
-        <div class="dialog-info">
-            <span class="title"> جهت اطلاعات بیشتر و مشاوره تماس بگیرید. </span>
-            <div class="buttons animate__animated wow animate__zoomIn">
-                <a href="tel:+21.123.4578" class="mcbutton fucsia hvr-pulse-shrink"><i class="bi bi-telephone"></i>21.123.4578+ </a>
-            </div>
-        </div>
-    </div>
-
-    <div class="dialogCorso " id="c4">
-        <i class="close bi bi-x" data-id="c4"></i>
-        <div class="dialog-content">
-            <span class="title" style="color:#4f4f4f"> مراحل ادامه تحصیل </span>
-            <div class="row">
-                <div class="column medium-8 dialog-left">
-                    <div style="color:#a3a3a3">
-                        <span class="title" style="color:#eb008c"> نوشته شده در: </span> 21 مهر 1399 <span
-                            <!-- class="title due" style="color:#eb008c"></span></div>
-                    <div class="dialog-contentcontent" style="color:#828282">
-                        توضیحات مراحل ادامه تحصیل
-                    </div>
-                </div>
-                <div class="column medium-4 dialog-right">
-                    <!-- <span class="title" style="color:#eb008c"></span> -->
-                    <div class="dialog-contentcontent">
-                        <a href="#"> علی محمدی </a> </div>
-                </div>
-
-            </div>
-        </div>
-        <div class="dialog-info">
-            <span class="title"> جهت اطلاعات بیشتر و مشاوره تماس بگیرید. </span>
-            <div class="buttons animate__animated wow animate__zoomIn">
-                <a href="tel:+21.123.4578" class="mcbutton fucsia hvr-pulse-shrink"><i class="bi bi-telephone"></i> 21.123.4578+ </a>
-            </div>
-        </div>
-    </div>
-
-    <div class="dialogCorso " id="c5">
-        <i class="close bi bi-x" data-id="c5"></i>
-        <div class="dialog-content">
-            <span class="title" style="color:#4f4f4f"> شرایط پذیرش مدارس و دانشگاه ها </span>
-            <div class="row">
-                <div class="column medium-8 dialog-left">
-                    <div style="color:#a3a3a3">
-                        <span class="title" style="color:#eb008c"> نوشته شده در: </span> 21 مهر 1399 <span
-                            <!-- class="title due" style="color:#eb008c"></span></div>
-                    <div class="dialog-contentcontent" style="color:#828282">
-                        توضیحات شرایط پذیرش مدارس و دانشگاه ها
-                    </div>
-                </div>
-                <div class="column medium-4 dialog-right">
-                    <!-- <span class="title" style="color:#eb008c"></span> -->
-                    <div class="dialog-contentcontent">
-                        <a href="#"> علی محمدی </a> </div>
-                </div>
-
-            </div>
-        </div>
-        <div class="dialog-info">
-            <span class="title"> جهت اطلاعات بیشتر و مشاوره تماس بگیرید. </span>
-            <div class="buttons animate__animated wow animate__zoomIn">
-                <a href="tel:+21.123.4578" class="mcbutton fucsia hvr-pulse-shrink"><i class="bi bi-telephone"></i>21.123.4578+ </a>
-            </div>
-        </div>
-    </div>
-
-    <div class="dialogCorso " id="pm1">
-        <i class="close bi bi-x" data-id="pm1"></i>
-        <div class="dialog-content">
-            <span class="title" style="color:#4f4f4f"> چرا وقت کم میارم  </span>
-            <div class="row">
-                <div class="column medium-8 dialog-left">
-                    <div style="color:#a3a3a3">
-                        <span class="title" style="color:#eb008c"> نوشته شده در: </span> 21 مهر 1399 <span
-                            <!-- class="title due" style="color:#eb008c"></span></div>
-                    <div class="dialog-contentcontent" style="color:#828282">
-                        توضیحات
-                    </div>
-                </div>
-                <div class="column medium-4 dialog-right">
-                    <!-- <span class="title" style="color:#eb008c"></span> -->
-                    <div class="dialog-contentcontent">
-                        <a href="#"> علی محمدی </a> </div>
-                </div>
-
-            </div>
-        </div>
-        <div class="dialog-info">
-            <span class="title"> جهت مشاوره تماس بگیرید. </span>
-            <div class="buttons animate__animated wow animate__zoomIn">
-                <a href="tel:+21.123.4578" class="mcbutton fucsia hvr-pulse-shrink"><i class="bi bi-telephone"></i>21.123.4578+ </a>
-            </div>
-        </div>
-    </div>
-
-    <div class="dialogCorso " id="pm2">
-        <i class="close bi bi-x" data-id="pm2"></i>
-        <div class="dialog-content">
-            <span class="title" style="color:#4f4f4f"> چطور میتونم هم تفریح کنم هم درس بخونم </span>
-            <div class="row">
-                <div class="column medium-8 dialog-left">
-                    <div style="color:#a3a3a3">
-                        <span class="title" style="color:#eb008c"> نوشته شده در: </span> 21 مهر 1399 <span
-                            <!-- class="title due" style="color:#eb008c"></span></div>
-                    <div class="dialog-contentcontent" style="color:#828282">
-                        توضحیات
-                    </div>
-                </div>
-                <div class="column medium-4 dialog-right">
-                    <!-- <span class="title" style="color:#eb008c"></span> -->
-                    <div class="dialog-contentcontent">
-                        <a href="#"> علی محمدی </a> </div>
-                </div>
-
-            </div>
-        </div>
-        <div class="dialog-info">
-            <span class="title"> جهت مشاوره تماس بگیرید. </span>
-            <div class="buttons animate__animated wow animate__zoomIn">
-                <a href="tel:+21.123.4578" class="mcbutton fucsia hvr-pulse-shrink"><i class="bi bi-telephone"></i>21.123.4578+ </a>
-            </div>
-        </div>
-    </div>
-
-    <div class="dialogCorso " id="pm3">
-        <i class="close bi bi-x" data-id="pm3"></i>
-        <div class="dialog-content">
-            <span class="title" style="color:#4f4f4f"> چرا همیشه خسته ام؟ </span>
-            <div class="row">
-                <div class="column medium-8 dialog-left">
-                    <div style="color:#a3a3a3">
-                        <span class="title" style="color:#eb008c"> نوشته شده در: </span> 21 مهر 1399 <span
-                            <!-- class="title due" style="color:#eb008c"></span></div>
-                    <div class="dialog-contentcontent" style="color:#828282">
-                        چرا همیشه خسته ام
-                    </div>
-                </div>
-                <div class="column medium-4 dialog-right">
-                    <!-- <span class="title" style="color:#eb008c"></span> -->
-                    <div class="dialog-contentcontent">
-                        <a href="#"> علی محمدی </a> </div>
-                </div>
-
-            </div>
-        </div>
-        <div class="dialog-info">
-            <span class="title"> جهت مشاوره تماس بگیرید. </span>
-            <div class="buttons animate__animated wow animate__zoomIn">
-                <a href="tel:+21.123.4578" class="mcbutton fucsia hvr-pulse-shrink"><i class="bi bi-telephone"></i> 21.123.4578+ </a>
-            </div>
-        </div>
-    </div>
-
-    <!-- <div class="dialogCorso " id="gs1">
-        <span class="close icon-cross" data-id="gs1"></span>
-        <div class="dialog-content">
-            <span class="title" style="color:#4f4f4f"></span>
-            <div class="row">
-                <div class="column medium-8 dialog-left">
-                    <div style="color:#a3a3a3">
-                        <span class="title" style="color:#eb008c">  </span> <span class="title due"
-                            style="color:#eb008c"> </span> </div>
-                    <div class="dialog-contentcontent" style="color:#828282">
-                        <p></p>
-                    </div>
-                </div>
-                <div class="column medium-4 dialog-right">
-                    <span class="title" style="color:#eb008c"></span>
-                    <div class="dialog-contentcontent">
-                        <a href="#">
-                            </a> </div>
-                </div>
-
-            </div>
-        </div>
-        <div class="dialog-info">
-            <span class="title"></span>
-            <div class="buttons animate__animated wow animate__zoomIn">
-                <a href="tel:+21.123.4578" class="mcbutton btn-js"><i class="bi bi-telephone"></i></a>
-                <a href="mailto:school@gmail.com" class="mcbutton fucsia hvr-pulse-shrink"><i
-                        class="bi bi-envelope"></i> </a>
-            </div>
-        </div>
-    </div> -->
 
     <a href="#linlscrool" id="goto" class="hvr-icon-wobble-vertical btn-active-border"> <i class="bi bi-arrow-up-circle hvr-icon"></i> </a>
 
