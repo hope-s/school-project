@@ -296,3 +296,8 @@ jQuery(document).ready(function($) {
   });
 
 });
+
+
+
+// register tab
+

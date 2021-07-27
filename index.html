@@ -43,8 +43,10 @@
     <script src="vendor/counter/waypoints.min.js"></script>
     <script src="vendor/counter/counter.js"></script>
     <link rel="stylesheet" href="vendor/animate/animate.min.css">
-
     <!-- animate css -->
+    </script>
+
+    
 
     <script>
         jQuery(document).ready(function($) {
@@ -143,15 +145,28 @@
                         </span>
                     </a></div>
                 <div class="right">
-                    <ul>
+                    <ul class="access-menu menu">
                         <a href="index.html">
-                            <img src="img/logo.png" width="50px" alt="">
+                            <img src="img/logo.png" width="50px" alt="logo">
                         </a>
                         <li><a class="hvr-underline-from-center" href="#"> پیش ثبت نام  </a></li>
-                         <li><a class="hvr-underline-from-center" href="#"> امکانات </a></li>
+                        <li><a class="hvr-underline-from-center" href="#"> امکانات </a></li>
                         <li><a class="hvr-underline-from-center" href="#"> اخبار </a></li>
-                        <li><a class="hvr-underline-from-center" href="#"> مقالات مفید </a></li>
-                        <li><a class="hvr-underline-from-center" href="#"> درباره مدرسه </a></li>
+                        <li class="menu menu-hover">
+                            <a href="#"> مقالات مفید </a>
+                            <ul class="submenu">
+                              <li><a href="#"> مقالات و نشریه های دانش آموزی </a></li>
+                              <hr>
+                              <li><a href="#"> تابلو اعلانات </a></li>
+                            </ul>
+                        </li>
+                        <li class="menu menu-hover">
+                            <a href="#"> خدمات مدرسه </a>
+                            <ul class="submenu">
+                              <li><a href="#"> در باره مدرسه </a></li>
+                            </ul>
+                        </li>
+
                         <li><a class="hvr-underline-from-center" href="#"> خانه  </a></li>
                     </ul>
                 </div>
@@ -162,8 +177,9 @@
             <div id="mappa"></div>
             <div class="row" id="th">
                 <div id="text-home">
-                    <h2> فرزند خود را به ما بسپارید </h2>
-                    <p> لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز </p>
+                    <h4> چگونه می توان نوجوانانی موفق در طول سال تحصیلی داشته باشیم؟ با نوآوران همراه باشید! </h2>
+                    <p>موفقیت نوعی توانایی است که راه رسیدن به هدف را برای ما آسان می سازد . موفقیت یک سفر است که در تمامی ابعاد و جنبه های زندگی جریان دارد.
+                    </p>
                 </div>
             </div>
 
@@ -374,61 +390,109 @@
         </div>
 
         <div class="section mc" id="questions">
-            <div class="mdiv-unskew" style="background: rgb(238,238,238);"></div>
+            <div class="mdiv-unskew"></div>
 
-            <div class="section" style="background: rgb(238,238,238);">
-                <div class="row content-section  text-center">
-                    <h2 class=""> پرسش ها </h2>
-                    <ul id="main-nav">
-                        <li>
-                            <a href="#IT" style="margin-left:0" class="mcbutton"> انتخاب رشته </a>
-                        </li>
-                        <li>
-                            <a href="#project-management" class="mcbutton"> مدیریت زمان </a>
-                        </li>
-                        <li>
-                            <a href="#soft-skills" style="margin-right:0" class="mcbutton"> آینده نگری </a>
-                        </li>
-                    </ul>
+            <div class="section">
+                <div class="row" dir="ltr">
+                    <div class="content">
+                        <!--content inner-->
+                        <div class="content__inner">
+                            <div class="container">
+                                <!--content title-->
+                                <h2 class="content__title"> پیش ثبت نام  </h2>
+                            </div>
+                            <div class="container overflow-hidden">
+                                <!--multisteps-form-->
+                                <div class="multisteps-form">
+                                    <!--progress bar-->
+                                    <div class="row">
+                                        <div class="multisteps-form__progress">
+                                            <button class="multisteps-form__progress-btn js-active" type="button"
+                                                title="User Info"> در باره مدرسه </button>
+                                            <button class="multisteps-form__progress-btn" type="button" title="Order Info"> دانش آموزان نمونه </button>
+                                            <button class="multisteps-form__progress-btn" type="button"title="Address"> شرایط پذیرش </button>
+                                            <button class="multisteps-form__progress-btn" type="button" title="Comments"> اطلاعت شما </button>
+                                        </div>
+                                    </div>
+                                    <!--form panels-->
+                                    <div class="row">
+                                        <div class="col-12 col-lg-8 m-auto">
+                                            <form class="multisteps-form__form">
+                                                <!--single form panel-->
+                                                <div class="multisteps-form__panel shadow p-4 rounded bg-white js-active"
+                                                    data-animation="scaleIn">
+                                                    <h3 class="multisteps-form__title"> در باره مدرسه فن آوران </h3>
+                                                    <div class="multisteps-form__content">
+                                                        <div class="button-row d-flex mt-4">
+                                                            <button class="js-btn-next btn-hover-blue mx-auto" type="button" title="Next"> مرحله بعدی </button>
+                                                        </div>                                    
+                                                    </div>
+                                                </div>
+                                                <!--single form panel-->
+                                                <div class="multisteps-form__panel shadow p-4 rounded bg-white" data-animation="scaleIn">
+                                                    <h3 class="multisteps-form__title"> دانش آموزان نمونه </h3>
+                                                    <div class="multisteps-form__content">
+                                                        <img src="img/DaneshAmozanNemoneh_files.jpg" class="mx-auto" loading="lazy" alt="img">
+                                                        <div class="button-row d-flex mt-4">
+                                                            <button class="js-btn-prev btn-hover-danger mx-auto" type="button" title="Prev"> مرحله قبل </button>
+                                                            <button class="ml-auto js-btn-next btn-hover-blue mx-auto" type="button" title="Next"> مرحله بعد </button>
+                                                        </div>                                    
+                                                    </div>
+                                                </div>
+                                                <!--single form panel-->
+                                                <div class="multisteps-form__panel shadow p-4 rounded bg-white" data-animation="scaleIn">
+                                                    <h3 class="multisteps-form__title"> شرایط پذیرش </h3>
+                                                    <div class="multisteps-form__content">
+                                                        <p class="multisteps-form__description">
+                                                            وزیر آموزش و پرورش دستورالعمل اجرایی ثبت نام دانش آموزان در مدارس در سال تحصیلی ۱۴۰۱-۱۴۰۰ را ابلاغ کرد و بر اساس آن ثبت نام سال تحصیلی جدید در تمام دوره ها، الکترونیکی است.
+                                                            به گزارش ایسنا، ثبت نام مدارس برای سال جدید بجز پایه یکم ابتدایی، به صورت غیر حضوری و الکترونیکی در سامانه پادا به نشانی http://pada.medu.ir انجام خواهد شد و زمان ثبت نام دوره های مختلف تحصیلی بر اساس ضوابط و مقررات مربوطه در سامانه سیدا اعلام خواهد شد.
+                                                            ثبت نام میان پایه ها به صورت خودکار انجام می شود و دانش آموز در پایه بالاتر در همان مدرسه ثبت نام می گردد و نیازی به مراجعه دانش آموز یا اولیای آنها به مدرسه نیست.
+                                                            براساس دستورالعملل ابلاغی وزیر آموزش و پرورش، برگزاری آزمون ورودی، مصاحبه و تعیین شرط معدل برای ثبت نام دانش آموزان و با توجه به رایگان بودن ثبت نام و عدم اجبار در بحث مشارکت های مردمی دریافت هر گونه وجه (به جز وجوه مربوط به بیمه حوادث و کتاب های درسی) در زمان ثبت نام مجاز نیست.
+                                                            دریافت وجوه اختیاری مربوط به کمکهای مردمی، فعالیت های فوق برنامه، سرویس ایاب و ذهاب، لباس فرم، لباس کارگاهی، با هماهنگی و موافقت انجمن اولیاء و مربیان مدرسه و با رعایت سایر قوانین و مقررات بعد از شروع سال تحصیلی امکان پذیر خواهد بود.
+                                                        </p>
 
-                    <div id="divo" class="fixed-portfolio">
-                        <label id="open-category" for="show-menu" class="show-menu text-center"><span id="vm"> باز کنید </span> <i class="bi bi-chevron-right"></i></label>
-                        <input type="checkbox" id="show-menu" role="button">
-                        <div id="portfolio-list-container" class="fixed-portfolio">
-                            <ul>
-                                <li>
-                                    <a class="filter mcbutton" href="#IT" style="margin-left:0"> انتخاب رشته </a>
-                                </li>
-                                <li>
-                                    <a class="filter mcbutton" href="#project-management"> مدیریت زمان </a>
-                                </li>
-                                <li>
-                                    <a class="filter mcbutton" href="#soft-skills" style="margin-right:0"> آینده نگری </a>
-                                </li>
-                            </ul>
+                                                        <button class="js-btn-prev btn-hover-danger mx-auto" type="button" title="Prev"> مرحله قبل </button>
+                                                        <div class="button-row d-flex mt-4">
+                                                            <button class="ml-auto js-btn-next btn-hover-blue mx-auto" type="button" title="Next"> مرحله بعد </button>
+                                                        </div>                                    
+                                                    </div>
+                                                </div>
+                                                <!--single form panel-->
+                                                <div class="multisteps-form__panel shadow p-4 rounded bg-white" data-animation="scaleIn">
+                                                    <h3 class="multisteps-form__title"> اطلاعات پیش ثبت نام </h3>
+                                                    <div class="multisteps-form__content">
+                                                        <div class="wrapper fadeInDown">
+                                                            <div id="formContent">
+                                                                <form>
+                                                                    <input type="text" id="name" class="fadeIn second" name="name" placeholder=" نام کامل " style="margin-top: 15px;">
+                                                                    <input type="text" id="number" class="fadeIn third" name="number" placeholder=" معدل امسال ">
+                                                                    <input type="submit" class="btn-success fourth mx-auto" value="ارسال">
+                                                                </form>
+                                                                <select class="custom-select form-control">
+                                                                    <option selected="selected"> متقاضی چه پایه‌ای هستید </option>
+                                                                    <option> اول </option>
+                                                                    <option> دوم </option>
+                                                                    <option> سوم </option>
+                                                                    <option> چهارم </option>
+                                                                    <option> پنجم </option>
+                                                                    <option> ششم </option>
+                                                                </select>   
+                                                            </div>
+                                                          </div>
+                                                          <div class="button-row d-flex mt-4">
+                                                            <button class="js-btn-prev btn-hover-danger mx-auto" type="button" title="Prev"> مرحله قبل </button>
+                                                        </div>                                    
+       
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
 
-                    <div class="row corso" id="IT" dir="ltr">
-                        <div class="corso-content column small-centered medium-10">
-                            <div class="corso-image">
-                                <img class="width-m-50" src="img/undraw_selecting_1lx3-1-1.svg" />
-                            </div>
-                            <div class="corso-testo" style="text-align: right;">
-                                <h2> انتخاب رشته </h2>
-                                <div class="title"></div>
-                                <p>ما باور داریم انتخاب رشته‌ی پایه‌ی نهم یکی از مهم‌ترین وتأثیرگذارترین انتخاب‌های زندگی فرزندانمان است و در این راه از هیچ تلاشی برای همراهی، دریغ نمی‌کنیم. جلسات مشاوره با دانش‌آموزان و والدین، آزمون‌های استعدادیابی و رغبت سنج، همایش‌های آشنایی با رشته‌های مختلف دانشگاهی با حضور فارغ‌التحصیلان موفق و کارگاه‌های آشنایی با بازارکار، بخشی از فعالیت‌های مجموعه مدارس سلام در این راستاست.</p>
-                                <div class="title gray"> سوالات متداول </div>
-
-                                <a href="javascript:void(0)" data-dialog="c1" class="mcbutton withIcon"> چه رشته ای برای ادامه تحصیل انتخاب کنم
-                                    <i class="bi bi-search"></i></a>
-                                <a href="javascript:void(0)" data-dialog="c2" class="mcbutton withIcon"> به چه چیزی علاقه دارم <i class="bi bi-search"></i></a>
-                                <a href="javascript:void(0)" data-dialog="c3" class="mcbutton withIcon"> چطور ادامه تحصیل بدم <i class="bi bi-search"></i></a>
-                                <a href="javascript:void(0)" data-dialog="c4" class="mcbutton withIcon"> مراحل ادامه تحصیل <i class="bi bi-search"></i></a>
-                                <a href="javascript:void(0)" data-dialog="c5" class="mcbutton withIcon">پذیرش مدارس و دانشگاه ها <i class="bi bi-search"></i></a>
-                            </div>
-                        </div>
-                    </div>
                 </div>
             </div>
         </div>
@@ -439,12 +503,13 @@
                 <div class="row content-section" style="text-align: right;">
                     <div class="row corso">
                         <div class="corso-content reverse column small-centered medium-10">
-                            <div class="corso-image width-m-50">
-                                <img src="img/PM.png"/> 
-                            </div>
                             <div class="corso-testo">
                                 <h2> اخبار </h2>
                             </div>
+                            <div class="corso-image width-m-50">
+                                <img src="img/PM.png"/> 
+                            </div>
+
                         </div>
                     </div>
 
@@ -505,29 +570,29 @@
 
         <article class="section ff mc">
             <div class="mdiv-unskew" style="background:#fff"></div>
-            <div class="section pr-xs-0">
-                <div class="row content-section pr-xs-0">
-                    <div class="column medium-centered pr-xs-0">
-                        <div class="row pr-xs-0">
+            <div class="section">
+                <div class="row content-section">
+                    <div class="column medium-centered">
+                        <div class="row">
                             <h2 class="text-center"> تابلو اعلانات </h2>
 
                             <div class="wrapper">
-                                <div class="card-article column medium-6 large-4"><img src="https://images.unsplash.com/photo-1477666250292-1419fac4c25c?auto=format&amp;fit=crop&amp;w=667&amp;q=80&amp;ixid=dW5zcGxhc2guY29tOzs7Ozs%3D" />
+                                <div class="card-article"><img src="img/article.png" loading="lazy" alt="img"/>
                                     <div class="info">
-                                        <h1>Mountain</h1>
-                                        <p>Lorem Ipsum is simply dummy text from the printing and typeseting industry</p><button>Read More</button>
+                                        <h3> اعلان اول </h1>
+                                        <!-- <p></p><button> خواندن بیشتر </button> -->
                                     </div>
                                 </div>
-                                <div class="card-article column medium-6 large-4"><img src="https://images.unsplash.com/photo-1425342605259-25d80e320565?auto=format&amp;fit=crop&amp;w=750&amp;q=80&amp;ixid=dW5zcGxhc2guY29tOzs7Ozs%3D" />
+                                <div class="card-article"><img src="img/article2.jpg" loading="lazy" alt="img"/>
                                     <div class="info">
-                                        <h1>Road</h1>
-                                        <p>Lorem Ipsum is simply dummy text from the printing and typeseting industry</p><button>Read More</button>
+                                        <h3> اعلان دوم </h1>
+                                        <!-- <p></p><button> خواندن بیشتر </button> -->
                                     </div>
                                 </div>
-                                <div class="card-article column medium-6 large-4"><img src="https://images.unsplash.com/photo-1503249023995-51b0f3778ccf?auto=format&amp;fit=crop&amp;w=311&amp;q=80&amp;ixid=dW5zcGxhc2guY29tOzs7Ozs%3D" />
+                                <div class="card-article"><img src="img/article3.jpg" loading="lazy" alt="img"/>
                                     <div class="info">
-                                        <h1>Protester</h1>
-                                        <p>Lorem Ipsum is simply dummy text from the printing and typeseting industry</p><button>Read More</button>
+                                        <h3> اعلان سوم </h1>
+                                        <!-- <p></p><button> خواندن بیشتر </button> -->
                                     </div>
                                 </div>
                             </div>
@@ -1356,6 +1421,8 @@
     <script>new WOW().init();</script>
     <!--  -->
     <script src="app.js/app.js"></script>
+    <script src="app.js/registerTab.js"></script>
+
 
     <script src="vendor/waitforimages/jquery.waitforimages.min.js"></script>
     <script src="vendor/class.mcslider/class.mcslider.js"></script>
