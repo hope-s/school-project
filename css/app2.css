@@ -1891,8 +1891,8 @@ a[data-fancybox] img {
 }
 
 .card__glass {
-    /*position: relative;
-    */overflow: hidden;
+    position: relative;
+    overflow: hidden;
     text-align: center;
     padding: 2.5rem;
     border: 1px solid #ec008c;
