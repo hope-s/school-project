@@ -1235,6 +1235,10 @@ p.min {
     display: block;
 }
 
+.about-school{
+    margin-top: -120px;
+}
+
 .about-school p {
     color: #000 !important;
 }
