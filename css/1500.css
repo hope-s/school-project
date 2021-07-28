@@ -20,10 +20,10 @@
     margin-top: -210px;
 }
 
-#catalogo, #metodo {
+/* #catalogo, #metodo {
     padding-top: 80px;
     padding-bottom: 300px;
-}
+} */
 
 .withbg:before {
     top: -80px;

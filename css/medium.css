@@ -135,7 +135,7 @@ h2 {
 
 #corsi .corso-testo h2,.corso-testo h2{
 	margin-bottom: 40px;
-    /* margin-top: -125px; */
+    margin-top: -125px;
 }
 
 #corsi{
@@ -362,7 +362,7 @@ h2 {
 
 .section.mcs{
     padding: 180px 0;
-    padding-bottom:300px;
+    /* padding-bottom:300px; */
 }
 
 .dialog-info .dialog-info-buttons .mcbutton{
