@@ -3384,3 +3384,16 @@ ul li{
     list-style: none;
 }
 
+.aboute_school_box{
+    display: none !important;
+}
+
+@media only screen and (max-width: 769px){
+    .aboute_school_box{
+        display: block !important;
+    }
+
+    .book{
+        display: none !important;
+    }
+}
