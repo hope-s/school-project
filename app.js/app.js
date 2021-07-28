@@ -17,12 +17,6 @@ jQuery(document).ready(function ($) {
     $("#body").addClass("open_menu");
   });
 
-  $(".close_menu").click(function (e) {
-    e.preventDefault();
-    e.stopImmediatePropagation();
-    $("#body").removeClass("open_menu");
-  });
-
   $("#mobile-h-v li a").click(function (e) {
     $("#body").removeClass("open_menu");
   });
