@@ -1296,7 +1296,7 @@ p.min {
 .footer-links{
     position: absolute;
     left: 31%;
-    top: 30%;
+    top: 20%;
 }
 
 .footer-links li{
@@ -1374,6 +1374,7 @@ p.min {
         color: #fff;
         font-size: 20px !important;
     }
+
 }
 
 #footer .mdiv-skew {
@@ -2673,7 +2674,7 @@ p {
 }
 
 .content__title {
-    margin-bottom: 40px;
+    margin-bottom:8rem;
     font-size: 20px;
     text-align: center;
 }
@@ -2718,10 +2719,11 @@ p {
 
 .multisteps-form__progress-btn:before {
     position: absolute;
-    top: 0;
+    bottom: 50px;
     left: 50%;
     display: block;
-    width: 13px;
+    font-size: 50px;
+    /*width: 13px;
     height: 13px;
     content: '';
     transform: translateX(-50%);
@@ -2731,9 +2733,39 @@ p {
     background-color: #fff;
     box-sizing: border-box;
     z-index: 3;
+    */-webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    -webkit-transition: all 0.15s linear 0s, transform 0.15s cubic-bezier(0.05, 1.09, 0.16, 1.4) 0s;
+    -moz-transition: all 0.15s linear 0s, transform 0.15s cubic-bezier(0.05, 1.09, 0.16, 1.4) 0s;
+    -ms-transition: all 0.15s linear 0s, transform 0.15s cubic-bezier(0.05, 1.09, 0.16, 1.4) 0s;
+    -o-transition: all 0.15s linear 0s, transform 0.15s cubic-bezier(0.05, 1.09, 0.16, 1.4) 0s;
+    -webkit-transform: translateX(-50%);
+}
+
+.multisteps-form__progress-btn1::before{
+    content: "\f265";
+    font-family: bootstrap-icons !important;
+    z-index: 9999999;
+    
+}
+
+.multisteps-form__progress-btn2::before{
+    content: "\f4d4";
+    font-family: bootstrap-icons !important;
+    z-index: 9999999;
+    
+
+}.multisteps-form__progress-btn3::before{
+    content: "\f271";
+    font-family: bootstrap-icons !important;
+    z-index: 9999999;
+    
 }
 
 .multisteps-form__progress-btn:after {
+    /* content: "\f0f6" !important; */
     position: absolute;
     top: 5px;
     right: calc(-50% - 13px / 2);
@@ -2742,7 +2774,7 @@ p {
     transition-timing-function: linear;
     transition-delay: 0s;
     display: block;
-    width: 100%;
+    width: 110%;
     height: 2px;
     content: '';
     background-color: currentColor;
@@ -2757,9 +2789,16 @@ p {
     color: #007bff;
 }
 
+
 .multisteps-form__progress-btn.js-active:before {
-    transform: translateX(-50%) scale(1.2);
-    background-color: currentColor;
+    color: #007bff;
+    /*padding: 14px;
+    */background-color: #05DBF2;
+    border-radius: 10%;
+    -webkit-border-radius: 10%;
+    -moz-border-radius: 10%;
+    -ms-border-radius: 10%;
+    -o-border-radius: 10%;
 }
 
 .multisteps-form__form {
@@ -2835,6 +2874,19 @@ p {
     transition-timing-function: linear;
     transition-delay: 0s;
     transform: scale(1);
+}
+
+.multisteps-form__content p{
+    border: 1px solid #007bff;
+    padding: 20px;
+    border-radius: 4px;
+    color: #05DBF2 !important;
+    text-align: right !important;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    direction: rtl !important;
 }
 
 .multisteps-form__content .multisteps-form-btns{
@@ -3200,6 +3252,7 @@ input[type=text]:placeholder {
 .card .wrapper-new {
     background-color: #fff;
     height: 20rem;
+    width: 100%;
     position: relative;
     overflow: hidden;
 }
@@ -3273,23 +3326,20 @@ input[type=text]:placeholder {
     -moz-border-radius: 4px;
     -ms-border-radius: 4px;
     -o-border-radius: 4px;
+    width: 350px;
+
 }
 
 .card-news .image-news-1 {
     background: url(../img/dialog-content-image-1.jpg) center / cover no-repeat;
-    width: 350px;
-    
 }
 
 .card-news .image-news-2 {
     background: url(../img/dialog-content-image-2.webp) center / cover no-repeat;
-    width: 350px;
 }
 
 .card-news .image-news-3 {
     background: url(../img/dialog-content-image-3.webp) center / cover no-repeat;
-    width: 350px;
-    
 }
 
 .card-news .header {
