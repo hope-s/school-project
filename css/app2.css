@@ -1021,13 +1021,14 @@ p.min {
 
 }
 
-.mcslider .box-right p a {
+.mcslider .box-right span a {
     color: #eb008c;
     text-decoration: underline;
 }
 
+
 .mcslider .box-right .title {
-    text-transform: uppercase
+    text-transform: uppercase  
 }
 
 #mcslider .slick-list {
@@ -1036,9 +1037,9 @@ p.min {
 }
 
 .mcslider .box-right {
-
+    line-height: 25px;
     width: 100%;
-    text-align: left;
+    text-align: right;
     padding: 0 10px;
     position: relative;
     display: inline-block;
