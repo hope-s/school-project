@@ -2444,6 +2444,123 @@ a.slide_btn {
     }
 }
 
+/* zoom gallery */
+
+.zoom {
+	width: 100%;
+	height: 100vh;
+	max-width: 1260px;
+	margin: 0 auto;
+	padding: 1em;
+	background: ghostwhite;
+}
+
+.zoom-box {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	margin: 0 auto;
+	padding: 10px 0.375%;
+	background-color: #e1e1e1;
+	_min-height: 100%;
+}
+
+.zoom-box img {
+    transition: outline 0.4s ease;
+    margin: 10px 1.5%;
+    padding: 0;
+    /*flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis:;
+    auto*/flex: 0 1 300px;
+    /*eachimageremails300pxwide*/_flex: 0 1 auto;
+    -webkit-transition: outline 0.4s ease;
+    -moz-transition: outline 0.4s ease;
+    -ms-transition: outline 0.4s ease;
+    -o-transition: outline 0.4s ease;
+}
+
+.zoom-box .zoomimg:hover {
+	cursor: zoom-in;
+	outline: .05px solid #000;
+	opacity: 0.85;
+}
+
+.zoom-box.scale50 {
+	width: 47%;
+	max-width: 300px;
+	height: auto;
+}
+
+img.scale33 {
+	width: 30%;
+	height: auto;
+}
+
+#imgZoomDiv {
+/* 	opacity: 0; */
+	display: none;
+	position: fixed;
+	width: 100%;
+    /* margin-top: 7rem !important; */
+	height: 100%;
+	overflow:hidden;
+	border: 0;
+	top: 7rem;
+	right: 0;
+	left: 0;
+	z-index: 999999999999 !important;
+	background-color: rgba(0, 0, 0, 0.85);
+	cursor: -webkit-zoom-out;
+	cursor: -moz-zoom-out;
+	cursor: zoom-out;
+	-webkit-box-align: center;
+	-webkit-box-pack: center;
+	-webkit-transition: 200ms opacity;
+	-webkit-perspective: 1000;
+}
+
+#imgZoomDiv > div {
+	position: relative;
+	display: flex;
+	align-items: center;
+	margin: 0 auto;
+	padding: 0;
+    min-height: 100%;
+}
+
+#imgZoomDiv > div img.zoomed {
+	margin: 0 auto;
+	width: 100%;
+	height: auto;
+	max-width: 90vh;
+	max-height: 90vh;
+	border: 4px solid #fff;
+    z-index: 999990 !important;
+
+}
+
+#imgZoomDiv > div > i.close {
+	background:#fff;
+	border-radius:50%;
+	width:40px;
+	height:40px;
+	text-align:center;
+	line-height:40px;
+	font-size:40px;
+	color: #999;
+	position: absolute;
+	right: 0.5em;
+	top: 0.5em;
+	cursor: pointer;
+}
+#imgZoomDiv > div > i.close:hover {
+	color: #ddd;
+}
+
+
+
 .wrapper {
     display: flex;
     width: 100%;
@@ -2462,8 +2579,12 @@ a.slide_btn {
     position: relative;
     display: flex;
     align-items: flex-end;
-    transition: 0.4s ease-out;
     box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.5);
+    transition: all 0.1s ;
+    -webkit-transition: all 0.1s ;
+    -moz-transition: all 0.1s ;
+    -ms-transition: all 0.1s ;
+    -o-transition: all 0.1s ;
 }
 
 @media screen and (max-width: 768px) {
@@ -2613,6 +2734,7 @@ p {
 
 .multisteps-form__progress {
     display: grid;
+    direction: rtl;
     grid-template-columns: repeat(auto-fit, minmax(0, 1fr));
 }
 
@@ -2657,7 +2779,7 @@ p {
 .multisteps-form__progress-btn:after {
     position: absolute;
     top: 5px;
-    left: calc(-50% - 13px / 2);
+    right: calc(-50% - 13px / 2);
     transition-property: all;
     transition-duration: 0.15s;
     transition-timing-function: linear;
@@ -2829,8 +2951,6 @@ p {
     color: #000;
     background-color: #fff;
 }
-
-@import url('https://fonts.googleapis.com/css?family=Poppins');
 
 /* STRUCTURE */
 
@@ -3147,6 +3267,7 @@ input[type=text]:placeholder {
     z-index: 1;
     background-color: #fff;
     color: #000;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2) !important;
     border-radius: 4px;
     -webkit-border-radius: 4px;
     -moz-border-radius: 4px;
@@ -3178,11 +3299,14 @@ input[type=text]:placeholder {
     -moz-transform: translateY(-60px);
     -ms-transform: translateY(-60px);
     -o-transform: translateY(-60px);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2) !important;
+
 }
 
 .card-news .image-news-1 {
     background: url(../img/dialog-content-image-1.jpg) center / cover no-repeat;
     width: 350px;
+    
 }
 
 .card-news .image-news-2 {
@@ -3193,10 +3317,12 @@ input[type=text]:placeholder {
 .card-news .image-news-3 {
     background: url(../img/dialog-content-image-3.webp) center / cover no-repeat;
     width: 350px;
+    
 }
 
 .card-news .header {
     padding: 1em;
+    
 }
 
 .card-news .header::before,

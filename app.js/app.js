@@ -296,7 +296,3 @@ jQuery(document).ready(function($) {
   });
 
 });
-
-
-
-

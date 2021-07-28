@@ -46,8 +46,6 @@
     <!-- animate css -->
     </script>
     <link rel="stylesheet" href="vendor/slick/slick.css">
-    
-
     <script>
         jQuery(document).ready(function($) {
             $('#counter').counterUp({
@@ -413,7 +411,6 @@
                                         <div class="multisteps-form__progress">
                                             <button class="multisteps-form__progress-btn js-active" type="button"
                                                 title="User Info"> جزئیات </button>
-                                            <button class="multisteps-form__progress-btn" type="button" title="Order Info"> نحوه پرینت </button>
                                             <button class="multisteps-form__progress-btn" type="button"title="Address"> شرایط پذیرش </button>
                                             <button class="multisteps-form__progress-btn" type="button" title="Comments"> اطلاعت شما </button>
                                         </div>
@@ -439,7 +436,7 @@
                                                         <!-- <img src="img/DaneshAmozanNemoneh_files.jpg" class="mx-auto" loading="lazy" alt="img"> -->
                                                         <div class="button-row d-flex mt-4">
                                                             <button class="js-btn-prev btn-hover-danger mx-auto" type="button" title="Prev"> مرحله قبل </button>
-                                                            <button class="ml-auto js-btn-next btn-hover-blue mx-auto" type="button" title="Next"> مرحله بعد </button>
+                                                            <button class="js-btn-next btn-hover-blue mx-auto" type="button" title="Next"> مرحله بعد </button>
                                                         </div>                                    
                                                     </div>
                                                 </div>
@@ -630,27 +627,11 @@
                     <div class="column medium-centered">
                         <div class="row" id="bulletin">
                             <h2 class="text-center"> تابلو اعلانات </h2>
-
-                            <div class="wrapper">
-                                <div class="card-article"><img src="img/article.png" loading="lazy" alt="img"/>
-                                    <div class="info">
-                                        <h3> اعلان اول </h1>
-                                        <!-- <p></p><button> خواندن بیشتر </button> -->
-                                    </div>
-                                </div>
-                                <div class="card-article"><img src="img/article2.jpg" loading="lazy" alt="img"/>
-                                    <div class="info">
-                                        <h3> اعلان دوم </h1>
-                                        <!-- <p></p><button> خواندن بیشتر </button> -->
-                                    </div>
-                                </div>
-                                <div class="card-article"><img src="img/article3.jpg" loading="lazy" alt="img"/>
-                                    <div class="info">
-                                        <h3> اعلان سوم </h1>
-                                        <!-- <p></p><button> خواندن بیشتر </button> -->
-                                    </div>
-                                </div>
-                            </div>
+                            <div class="zoom-box">
+                                <img class="scale33 zoomimg" src="img/article.png" data-src="img/article.png" alt="image"/>
+                                <img class="scale33 zoomimg" src="img/article2.jpg" data-src="img/article2.jpg" alt="image"/>
+                                <img class="scale33 zoomimg" src="img/article3.jpg" data-src="img/article3.jpg" alt="image"/>
+                            </div class="zoom-box">
 
                         </div>
                     </div>
@@ -724,19 +705,17 @@
                                 <div class="column small-centered medium-10">
                                     <div class="row" style="position:relative">
                                         <div class="box-left">
-                                            <img src="img/package2.jpg">
+                                            <img src="img/course1.jpg">
                                         </div>
                                         <div class="box-right">
                                             <div>
                                                 <!-- <span class="title"></span> -->
                                                 <h3> کلاس هوش </h3>
                                                 <span style="text-align: right;">
-                                                    پرش، با همکاریِ معلمان و استادان درجه یک کشور، با بهترین شیوۀ تدریس و کیفیت تصویر، در قالب لوح‌فشرده، رویای داشتن لحظه به لحظۀ یک معلم خصوصی در کنار هر دانش‌آموز را به حقیقت رسانده است.
-                                                    .پرش، در قالب «بستۀ معلم خصوصی»، با فراهم آوردن کلاس خصوصی آرام، توسط استادان مسلط و امکان آموختن نکات ریز و درشت، داشتن نمونه سؤالات و امکان آموختن چندین بارۀ مطالب درسی، کمک شایانی به عدالت آموزشی کشور کمک کرده است
+                                                    یکی از مواردی است که متاسفانه علی رغم اهمیت بسیار زیاد آن در فرآیند یادگیری دانش آموزان، در نظام آموزش و پرورش کشورمان توجه چندانی به آن نمی شود. «هوش» با یادگیری دانش آموزان ارتباط مستقیم داشته و بالا بردن هوش به طور غیرمستقیم بر سطح نمرات ، یادگیری و انتقال مطالب تاثیر می گذارد.
+                                                    . است اسبا توجه به خلاء موجود در زمینه آموزش هوش و با توجه به تاثیرات فراوان پرورش هوش و خلاقیت در بهبود روند آموزشی دانش آموزان و نیز اهمیت این درس در آزمونهای ورودی مدارس تیزهوشان،مرکز آموزشی فن آوران اقدام به برگزاری کلاسهای هوش و خلاقیت(استعداد تحلیلی) نموده                             
                                                 </span>
-                                                <!-- <a href="javascript:void(0)" data-dialog="ep1" class="mcbutton fucsia">MAGGIORI INFORMAZIONI</a> -->
-                                                <a href="#" data-esterno="si" data-dialog=""
-                                                    class="mcbutton fucsia hvr-pulse-shrink"> سفارش </a>
+                                                <a href="#" data-esterno="si" data-dialog="#" class="mcbutton fucsia hvr-pulse-shrink"> ثبت نام  </a>
                                             </div>
                                         </div>
                                     </div>
@@ -749,19 +728,20 @@
                                 <div class="column small-centered medium-10">
                                     <div class="row" style="position:relative">
                                         <div class="box-left">
-                                            <img src="img/package.jpg">
+                                            <img src="img/course2.jpg">
                                         </div>
                                         <div class="box-right">
                                             <div>
                                                 <!-- <span class="title"></span> -->
                                                 <h3> کلاس رباتیک </h3>
-                                                <span style="text-align: right;">
-                                                    پرش، با همکاریِ معلمان و استادان درجه یک کشور، با بهترین شیوۀ تدریس و کیفیت تصویر، در قالب لوح‌فشرده، رویای داشتن لحظه به لحظۀ یک معلم خصوصی در کنار هر دانش‌آموز را به حقیقت رسانده است.
-                                                    .پرش، در قالب «بستۀ معلم خصوصی»، با فراهم آوردن کلاس خصوصی آرام، توسط استادان مسلط و امکان آموختن نکات ریز و درشت، داشتن نمونه سؤالات و امکان آموختن چندین بارۀ مطالب درسی، کمک شایانی به عدالت آموزشی کشور کمک کرده است
+                                                <span style="text-align: right; direction: rtl !important;">
+                                                    کلی سوال ممکنه تو ذهنتون باشه مثل کلاس رباتیک چیست؟ کلاس رباتیک از چه سنی مناسب است؟ اصلا چرا کلاس رباتیک کودکان؟ هزینه کلاس رباتیک کودکان به چه میزان است؟ کلاس رباتیک خوبه؟ یا برای فرزند زود؟ کلاس رباتیک کودکان به چه منظور است؟ و ….
+                                                    بریم جواب اولین سوال رو بدیم یعنی کلاس رباتیک چیست؟ رباتیک مفاهیم علوم و ریاضیات را آموزش می دهد، کیت های رباتیک مفاهیم علوم و ریاضیات را به دنیای واقعی متصل می کنند. کودکان همچنین می توانند مفاهیم تنش و زور را هنگام انتخاب مواد به کار رفته در ربات درک کنند. مفاهیم ساده و پیچیده ریاضی نیز در حالی که ربات را جمع می کنند نشان داده می شوند.
+                                                    دانش آموزان با کنترل یک ربات فیزیکی و دیدن اینکه چه اشتباهی رخ می دهد ، می آموزند که روبات چه کاری می تواند انجام دهد و چه کاری نمی تواند انجام دهد. آنها همچنین دستورالعمل های دقیق را یاد می گیرند. رباتیک به رفع تقاضای روزافزون برای آموزش علوم ،فناوری ، مهندسی و ریاضیات در مدارس کمک می کند.
                                                 </span>
                                                 <!--<a href="javascript:void(0)" data-dialog="ep1" class="mcbutton fucsia">MAGGIORI INFORMAZIONI</a>-->
                                                 <a href="#" data-esterno="si" data-dialog=""
-                                                    class="mcbutton fucsia hvr-pulse-shrink"> سفارش </a>
+                                                    class="mcbutton fucsia hvr-pulse-shrink"> ثبت نام  </a>
                                             </div>
                                         </div>
                                     </div>
@@ -774,19 +754,16 @@
                                 <div class="column small-centered medium-10">
                                     <div class="row" style="position:relative">
                                         <div class="box-left">
-                                            <img src="img/package.jpg">
+                                            <img src="img/course3.jpg">
                                         </div>
                                         <div class="box-right">
                                             <div>
                                                 <!-- <span class="title"></span> -->
                                                 <h3> کلاس روبیک </h3>
                                                 <span style="text-align: right;">
-                                                    پرش، با همکاریِ معلمان و استادان درجه یک کشور، با بهترین شیوۀ تدریس و کیفیت تصویر، در قالب لوح‌فشرده، رویای داشتن لحظه به لحظۀ یک معلم خصوصی در کنار هر دانش‌آموز را به حقیقت رسانده است.
-                                                    .پرش، در قالب «بستۀ معلم خصوصی»، با فراهم آوردن کلاس خصوصی آرام، توسط استادان مسلط و امکان آموختن نکات ریز و درشت، داشتن نمونه سؤالات و امکان آموختن چندین بارۀ مطالب درسی، کمک شایانی به عدالت آموزشی کشور کمک کرده است
-                                                </span>
+                                                    به صورت ترمیک،هرترم ۶جلسه و با مشارکت یک و دوروز در هفته در محل آموزشگاه چکاد برگزاری میشود.تعداد نفرات در کلاس۲تا۵نفرمیباشد.کلاس های عمومی در روز های سه شنبه،چهارشنبه و پنجشنبه در دوازده سانس برگزار میشود.در این کلاس ها سطح مبتدی تا مسابقاتی آموزش داده میشود.بازدهی کلاس عمومی در هرترم۱۰۰%میباشد.                                                </span>
                                                 <!--<a href="javascript:void(0)" data-dialog="ep1" class="mcbutton fucsia">MAGGIORI INFORMAZIONI</a>-->
-                                                <a href="#" data-esterno="si" data-dialog=""
-                                                    class="mcbutton fucsia hvr-pulse-shrink"> سفارش </a>
+                                                <a href="#" data-esterno="si" data-dialog="#" class="mcbutton fucsia hvr-pulse-shrink"> ثبت نام  </a>
                                             </div>
                                         </div>
                                     </div>
@@ -1096,5 +1073,6 @@
     <script src="vendor/class.mcslider/class.mcslider.js"></script>
 
     <script src="app.js/slider-book.js"></script>
+    <script src="app.js/zoomin.js"></script>
     </body>
 </html>

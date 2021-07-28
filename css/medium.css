@@ -287,8 +287,9 @@ h2 {
 }
 
 .mcslider .box-right{
+    direction: rtl;
     float: left;
-    width: 45%;
+    width: 43%;
     text-align: right;
     padding: 0 10px;
     position: relative;
