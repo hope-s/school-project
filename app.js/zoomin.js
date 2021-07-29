@@ -11,10 +11,10 @@ function imageZoom(){
       $(this).after('<div id="imgZoomDiv"><div><img src="" class="zoomed" /></div></div>');
       var $t = $(this);
       $('.zoomed').attr({src: $t.attr('data-src')});
-      //$('#imgZoomDiv').animate({opacity:"1"}, 250).show();
+      // $('#imgZoomDiv').animate({opacity:"1"}, 250).show();
       $('#imgZoomDiv').show();
   
-      $('#imgZoomDiv > div').hide().prepend('<i class="bi bi-x close"></i>').fadeIn(2222);// add close button
+      $('#imgZoomDiv > div').hide().prepend('<i class="bi bi-x close"></i>').fadeIn(400);// add close button
       setTimeout($.scrollLock(true),250);
   
     });

@@ -2432,7 +2432,7 @@ a.slide_btn {
 }
 
 .zoom-box img {
-    transition: outline 0.4s ease;
+    transition: outline 0.2s ease;
     margin: 10px 1.5%;
     padding: 0;
     /*flex-grow: 0;
@@ -2440,10 +2440,10 @@ a.slide_btn {
     flex-basis:;
     auto*/flex: 0 1 300px;
     /*eachimageremails300pxwide*/_flex: 0 1 auto;
-    -webkit-transition: outline 0.4s ease;
-    -moz-transition: outline 0.4s ease;
-    -ms-transition: outline 0.4s ease;
-    -o-transition: outline 0.4s ease;
+    -webkit-transition: outline 0.2s ease;
+    -moz-transition: outline 0.2s ease;
+    -ms-transition: outline 0.2s ease;
+    -o-transition: outline 0.2s ease;
 }
 
 .zoom-box .zoomimg:hover {
