@@ -428,6 +428,16 @@ p.min {
     height: 270px;
 }
 
+@media screen and (max-width: 768px){
+    .partners img {
+        height: auto !important;
+    }
+
+    .partners .owl-carousel{
+        margin-top: 16px !important;
+    }
+}
+
 .owl-nav-none .owl-nav {
     display: none !important;
 }
@@ -2083,7 +2093,7 @@ input[type=checkbox]:checked~#portfolio-list-container {
         background: #fff;
         border-radius: 4px;
         box-shadow: 0px 20px 30px -10px rgba(0, 0, 0, 0.1);
-        max-width: 65vw;
+        max-width: 84vw;
         min-width: 24vw;
         overflow: hidden;
         display: flex;
@@ -2492,11 +2502,12 @@ img.scale33 {
 #imgZoomDiv > div img.zoomed {
 	margin: 0 auto;
 	width: 100%;
+    margin-top: -7rem;
 	height: auto;
 	max-width: 90vh;
 	max-height: 90vh;
 	border: 4px solid #fff;
-    z-index: 999990 !important;
+    z-index: 999999999 !important;
 
 }
 
@@ -2513,6 +2524,7 @@ img.scale33 {
 	right: 0.1em;
 	top: 4rem;
 	cursor: pointer;
+    z-index: 99999999999;
 }
 #imgZoomDiv > div > i.close:hover {
 	color: #ddd;
