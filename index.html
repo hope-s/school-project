@@ -61,15 +61,34 @@
     <!-- icon -->
     <link rel="stylesheet" href="vendor/bootstrap-icons/font/bootstrap-icons.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- menu js -->
+    <script src="vendor/mmenu-js-master/mmenu.js"></script>
+    <script>
+    document.addEventListener(
+            "DOMContentLoaded", () => {
+                new Mmenu("#my-menu", {
+                    "extensions": [
+                        "theme-dark",
+                        "position-left",
+                        "position-front",
+                    ]
+                });
+            }
+        );
+    </script>
+    <!-- <script src="vendor/mmenu-js-master/mmenu.polyfills.js"></script> -->
+    <!-- <script src="vendor/mmenu-js-master/mburger/js/mburger.js" ></script> -->
+    <link rel="stylesheet" href="vendor/mmenu-js-master/mmenu.css" media="only screen and (max-width: 704px)">
+    <link rel="stylesheet" href="vendor/mmenu-js-master/mburger/mburger.css" media="only screen and (max-width: 704px)">
 </head>
 <body id="body" class="home blog d loading">
-<!-- 
+
     <div class="preloader">
         <div id="loader"></div>
         <div class="preloader_inner">1%</div>
         <img class="preloader-h1-sajjeo" src="img/preloader-image.jpg">
         <p class="preloader-h2-sajjeo"> Wwww.noavaran.ir </p>
-    </div> -->
+    </div>
 
     <input type="hidden" id="pag">
 
@@ -77,19 +96,37 @@
         
         <nav id="mobile-h-v">
             <div>
-                <ul>
-                    <li><a class="hvr-underline-from-center" href="#"> دوره های آموزشی </a></li>
-                    <li><a class="hvr-underline-from-center" href="#"> پیش ثبت نام  </a></li>
-                    <li><a class="hvr-underline-from-center" href="#"> امکانات </a></li>
-                    <li><a class="hvr-underline-from-center" href="#"> اخبار </a></li>
-                    <li><a class="hvr-underline-from-center" href="#"> مقالات مفید </a></li>
-                    <li><a class="hvr-underline-from-center" href="#">  درباره مدرسه </a></li>
-                    <li><a class="hvr-underline-from-center" href="#"> خانه  </a></li>
-                </ul>
-            <a href="javascript:void(0)" class="icon-cross close_menu  bi bi-x"></a>
+                <div id="my-page">
+                    <div id="my-header">
+                        <a class="mburger mburger--collapse d-md-none" href="#my-menu">
+                            <b></b>
+                            <b></b>
+                            <b></b>
+                        </a>
+                        <nav id="my-menu">
+                            <ul>
+                                <li><a class="hvr-underline-from-center" href="#home"> خانه </a></li>      
+                                <li><span>خدمات مدرسه</span>
+                                    <ul>
+                                        <li><a class="hvr-underline-from-center" href="#articles"> در باره مدرسه</a></li>
+                                    </ul>
+                                </li>
+                                <li><span>مقالات مفید</span>
+                                    <ul>
+                                        <li><a class="hvr-underline-from-center" href="#articles"> مقالات و نشریه های دانش آموزی </a></li>
+                                        <li class="me-md-5"><a class="hvr-underline-from-center" href="bulletin"> تابلو اعلانات</a></li>
+                                    </ul>
+                                </li>  
+                                <li><a class="hvr-underline-from-center" href="#news"> اخبار </a></li>        
+                                <li><a class="hvr-underline-from-center" href="#possibilities"> امکانات </a></li>
+                                <li><a class="hvr-underline-from-center" href="#pre-registration"> پیش ثبت نام  </a></li>
+                                <li><a class="hvr-underline-from-center" href="#courses"> دوره های آموزشی </a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
             </div>
         </nav>  
-
         <nav id="menu">
             <a href="index.html" id="logo">
                 <img src="img/logo.png" width="50px" alt="logo">
@@ -101,7 +138,8 @@
                     <span class="icon-Nesea_Logo_RGB">
                         <span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span><span class="path5"></span><span class="path6"></span><span class="path7"></span><span class="path8"></span><span class="path9"></span><span class="path10"></span><span class="path11"></span><span class="path12"></span><span class="path13"></span><span class="path14"></span><span class="path15"></span><span class="path16"></span>
                     </span>
-                </a></div>
+                </a>
+            </div>
                 <div class="right">
                     <ul class="access-menu menu">
                         <a href="index.html">
@@ -245,7 +283,7 @@
                                                 <div class="medium medium-6">
                                                     <div>
                                                         <div class="icon icon-graduation-cap" style="position: relative !important;">
-                                                            <i class="fa fa-graduation-cap" style="right: 18px "></i>
+                                                            <i class="fa fa-graduation-cap" style=" position: absolute;right: 21px; top: 30px;"></i>
                                                         </div>
                                                         <h3> نمونه افتخارات مدرسه فن‌آوران </h3>
                                                         <div class="title"> افتخارات مدرسه </div>
