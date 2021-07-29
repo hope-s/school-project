@@ -14,7 +14,7 @@ function imageZoom(){
       //$('#imgZoomDiv').animate({opacity:"1"}, 250).show();
       $('#imgZoomDiv').show();
   
-      $('#imgZoomDiv > div').hide().prepend('<i class="fa fa-times-circle close"></i>').fadeIn(2222);// add close button
+      $('#imgZoomDiv > div').hide().prepend('<i class="bi bi-x close"></i>').fadeIn(2222);// add close button
       setTimeout($.scrollLock(true),250);
   
     });

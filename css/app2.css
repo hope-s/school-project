@@ -84,6 +84,10 @@ h2 {
     color: #fff;
 }
 
+.close{
+    font-size: 30px !important;
+}
+
 h3 {
     font-family: Panton_Bold;
     font-size: 21px;
@@ -913,6 +917,7 @@ p.min {
 
 .dialogCorso .dialog-text {
     width: 100%;
+    font-size: 14px;
     text-align: right;
     display: inline-block;
     text-transform: uppercase;
@@ -2517,21 +2522,25 @@ img.scale33 {
 
 #imgZoomDiv > div > i.close {
 	background:#fff;
-	border-radius:50%;
+	border-radius:10%;
 	width:40px;
 	height:40px;
 	text-align:center;
 	line-height:40px;
 	font-size:40px;
-	color: #999;
+	color: rgb(30, 28, 28);
 	position: absolute;
 	right: 0.1em;
 	top: 4rem;
 	cursor: pointer;
-    z-index: 999999999999;
+	z-index: 999999999999;
+	-webkit-border-radius:10%;
+	-moz-border-radius:10%;
+	-ms-border-radius:10%;
+	-o-border-radius:10%;
 }
 #imgZoomDiv > div > i.close:hover {
-	color: #ddd;
+	color: rgb(171, 171, 171);
 }
 
 .wrapper {
@@ -2716,7 +2725,6 @@ img.scale33 {
     position: relative;
     padding-top: 20px;
     color: rgba(108, 117, 125, .7);
-    text-indent: -9999px;
     border: none;
     background-color: transparent;
     outline: none !important;
@@ -2759,26 +2767,26 @@ img.scale33 {
 .multisteps-form__progress-btn1::before{
     content: "\f265";
     font-family: bootstrap-icons !important;
-    z-index: 9999999;
+    z-index: 9999999 !important;
     
 }
 
 .multisteps-form__progress-btn2::before{
     content: "\f4d4";
     font-family: bootstrap-icons !important;
-    z-index: 9999999;
+    z-index: 9999999 !important;
     
 
 }.multisteps-form__progress-btn3::before{
     content: "\f271";
     font-family: bootstrap-icons !important;
-    z-index: 9999999;
+    z-index: 9999999 !important;
     
 }
 
 .multisteps-form__progress-btn:after {
-    /* content: "\f0f6" !important; */
-    position: absolute;
+    /*content: "\f0f6" !important;
+    */position: absolute;
     top: 5px;
     right: calc(-50% - 13px / 2);
     transition-property: all;
@@ -2787,10 +2795,15 @@ img.scale33 {
     transition-delay: 0s;
     display: block;
     width: 110%;
-    height: 2px;
+    height: 5px;
+    border-radius: 5px;
     content: '';
     background-color: currentColor;
     z-index: 1;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
 }
 
 .multisteps-form__progress-btn:first-child:after {
@@ -2910,7 +2923,8 @@ img.scale33 {
     background-color: #007bff;
     border: 0.5px solid #007bff;
     color: #fff;
-    padding: 10px;
+    padding: 7px;
+    white-space: nowrap;
     border-radius: 5px;
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
@@ -2934,7 +2948,8 @@ img.scale33 {
     background-color: #ec008c;
     border: 0.5px solid #ec008c;
     color: #fff;
-    padding: 10px;
+    padding: 7px;
+    white-space: nowrap;
     border-radius: 5px;
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
@@ -2958,7 +2973,8 @@ img.scale33 {
     background-color: #05DBF2;
     border: 0.5px solid #05DBF2;
     color: #fff;
-    padding: 10px;
+    padding: 7px;
+    white-space: nowrap;
     border-radius: 5px;
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
