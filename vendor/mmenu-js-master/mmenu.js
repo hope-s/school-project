@@ -29,9 +29,9 @@ document.addEventListener(
                 {
                     "position": "bottom",
                     "content": [
-                        "<a href='https://t.me/salamsch' target='_blank'><i class='bi bi-instagram'></i></a>",
-                        "<a href='https://t.me/salamsch' target='_blank'><i class='bi bi-telegram'></i></a>",
-                        "<a href='#' target='_blank'><i class='bi bi-whatsapp'></i></a>",
+                        "<a href='https://t.me/salamsch'target='_blank'><i style='font-size: 20px' class='bi bi-instagram'></i></a>",
+                        "<a href='https://t.me/salamsch' target='_blank'><i style='font-size: 20px' class='bi bi-telegram'></i></a>",
+                        "<a href='#' target='_blank'><i style='font-size: 20px' class='bi bi-whatsapp'></i></a>",
                     ]
                  },
              ],
