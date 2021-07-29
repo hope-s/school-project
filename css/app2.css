@@ -137,6 +137,7 @@ p.min {
 
 .div-mobile {
     display: block;
+    padding: 10px;
 }
 
 @media screen and (max-width: 768px) {
@@ -145,10 +146,6 @@ p.min {
         margin-bottom: -30rem !important;
     }
 }
-
-
-
-
 
 .catalogo-desc .column {
     margin-top: 20px;
@@ -1295,6 +1292,13 @@ p.min {
     top: 20%;
 }
 
+@media only screen and (min-width: 768px) and (max-width: 1300px) {
+    .footer-links{
+        left: 10%;
+        top: 60%;
+    }   
+}
+
 .footer-links li{
     list-style-type: disc;
     color: #fff;
@@ -1904,11 +1908,14 @@ input[type=checkbox]:checked~#portfolio-list-container {
     border-bottom-right-radius: 10px;
 }
 
-@media only screen and (max-width: 768px) {
-    .card__data {
-        margin-bottom: 2rem;
-        margin-top: 1.5rem;
-    }
+@media screen  and (max-width: 736px) {
+    .card__glass {
+        border-radius: 4px !important;
+        -webkit-border-radius: 4px !important;
+        -moz-border-radius: 4px !important;
+        -ms-border-radius: 4px !important;
+        -o-border-radius: 4px !important;
+    }    
 }
 
 .card__title {
@@ -3685,6 +3692,11 @@ ul li {
 }
 
 @media only screen and (max-width: 769px) {
+    .card__data {
+        margin-bottom: 2rem;
+        margin-top: 1.5rem;
+    }
+
     .aboute_school_box {
         display: block !important;
     }
@@ -3700,8 +3712,5 @@ ul li {
     .media-h2-sm{
         margin-top: 71px !important;
     }
-}
-
-@media only screen and (min-width: 768px) {
 
 }
