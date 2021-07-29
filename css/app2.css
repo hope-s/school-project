@@ -119,6 +119,7 @@ p.min {
     width: 100%;
 }
 
+
 .mobile-h {
     display: block;
     position: absolute;
@@ -164,7 +165,7 @@ p.min {
     z-index: 999999999;
     background: #fff;
     width: 100%;
-    z-index: 999;
+    z-index: 9999999999;
     -webkit-transition: background-color .3s ease;
     -ms-transition: background-color .3s ease;
     transition: background-color .3s ease;
