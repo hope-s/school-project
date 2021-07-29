@@ -16,8 +16,7 @@ document.addEventListener(
     "DOMContentLoaded", () => {
         new Mmenu("#my-menu", {
             "extensions": [
-                "position-back",
-                "position-bottom",
+                "popup",
             ],
             "navbars": [
                 {
