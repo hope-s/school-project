@@ -2469,6 +2469,17 @@ img.scale33 {
 	-webkit-perspective: 1000;
 }
 
+@media only screen and (min-width: 650px) {
+    #imgZoomDiv {
+        position: fixed;
+        top: 10rem !important;
+
+    }
+    #imgZoomDiv > div > i.close {
+        top: 0rem !important;
+    }   
+}
+
 #imgZoomDiv > div {
 	position: relative;
 	display: flex;
@@ -2499,20 +2510,17 @@ img.scale33 {
 	font-size:40px;
 	color: #999;
 	position: absolute;
-	right: 0.5em;
-	top: 5rem;
+	right: 0.1em;
+	top: 4rem;
 	cursor: pointer;
 }
 #imgZoomDiv > div > i.close:hover {
 	color: #ddd;
 }
 
-
-
 .wrapper {
     display: flex;
     width: 100%;
-    font-family: sans-serif !important;
     justify-content: space-around;
     flex-wrap: wrap !important;
 
@@ -2540,6 +2548,7 @@ img.scale33 {
         width: 100%;
         margin: 10px;
     }
+    
 }
 
 
@@ -2953,30 +2962,6 @@ img.scale33 {
     background-color: #fff;
 }
 
-/* STRUCTURE */
-
-#formContent {
-    -webkit-border-radius: 10px 10px 10px 10px;
-    border-radius: 10px 10px 10px 10px;
-    background: #fff;
-    padding: 45px;
-    width: 90%;
-    max-width: 450px;
-    position: relative;
-    padding: 0px;
-    -webkit-box-shadow: 0 30px 60px 0 rgba(0, 0, 0, 0.3);
-    box-shadow: 0 30px 60px 0 rgba(0, 0, 0, 0.3);
-    text-align: center;
-}
-
-#formFooter {
-    background-color: #f6f6f6;
-    border-top: 1px solid #dce8f1;
-    padding: 25px;
-    text-align: center;
-    -webkit-border-radius: 0 0 10px 10px;
-    border-radius: 0 0 10px 10px;
-}
 
 /* TABS */
 
