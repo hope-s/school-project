@@ -2452,11 +2452,10 @@ img.scale33 {
 	display: none;
 	position: fixed;
 	width: 100%;
-    /* margin-top: 7rem !important; */
 	height: 100%;
 	overflow:hidden;
 	border: 0;
-	top: 7rem;
+	top: 0rem;
 	right: 0;
 	left: 0;
 	z-index: 999999999999 !important;
