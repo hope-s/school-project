@@ -32,6 +32,7 @@ h2 {
     position: relative;
     transform: none;
     top: auto;
+    z-index: 99999999999 !important;
 }
 
 #menu .icon-Nesea_Logo_RGB,#menuS .icon-Nesea_Logo_RGB {
