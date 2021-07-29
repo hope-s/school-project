@@ -2482,12 +2482,16 @@ img.scale33 {
 @media only screen and (min-width: 650px) {
     #imgZoomDiv {
         position: fixed;
-        top: 10rem !important;
+        top: 9rem !important;
 
     }
     #imgZoomDiv > div > i.close {
         top: 0rem !important;
     }   
+
+    #imgZoomDiv > div img.zoomed {
+        margin-top: -10rem !important;
+    }    
 }
 
 #imgZoomDiv > div {
@@ -2502,7 +2506,7 @@ img.scale33 {
 #imgZoomDiv > div img.zoomed {
 	margin: 0 auto;
 	width: 100%;
-    margin-top: -7rem;
+    margin-top: 1rem;
 	height: auto;
 	max-width: 90vh;
 	max-height: 90vh;
@@ -2524,7 +2528,7 @@ img.scale33 {
 	right: 0.1em;
 	top: 4rem;
 	cursor: pointer;
-    z-index: 99999999999;
+    z-index: 999999999999;
 }
 #imgZoomDiv > div > i.close:hover {
 	color: #ddd;
