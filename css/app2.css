@@ -1282,7 +1282,8 @@ p.min {
 #pre-footer .footer-copy-right {
     position: absolute;
     bottom: 0px;
-    right: 10%;
+    right: 15%;
+    width: 90%;
 }
 
 #pre-footer .footer-copy-right p{
