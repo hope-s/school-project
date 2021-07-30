@@ -17,12 +17,6 @@ jQuery(document).ready(function ($) {
     $("#body").addClass("open_menu");
   });
 
-  $(".close_menu").click(function (e) {
-    e.preventDefault();
-    e.stopImmediatePropagation();
-    $("#body").removeClass("open_menu");
-  });
-
   $("#mobile-h-v li a").click(function (e) {
     $("#body").removeClass("open_menu");
   });
@@ -56,9 +50,9 @@ jQuery(document).ready(function ($) {
     if (url == "#IT") t = 150;
     else t = 100;
 
-    // $('html, body').animate({
-    //   scrollTop: $($(this).attr("href")).offset().top - t
-    // }, 1000, "easeInOutExpo");
+    $('html, body').animate({
+      scrollTop: $($(this).attr("href")).offset().top - t
+    }, 500, "easeInOutExpo");
   });
 
   $(".dialogCorso .close,#backCover").click(function () {
@@ -274,13 +268,15 @@ jQuery(document).ready(function($) {
     items: 1,
     animateOut: 'fadeOut',
     loop: true,
-    margin: 10,
+    margin: 40,
   });
   $('.custom1').owlCarousel({
     animateOut: 'slideOutDown',
     animateIn: 'flipInX',
     items: 1,
     margin: 30,
+    autoHeightClass: 'owl-height',
+    autoHeight:true,
     stagePadding: 30,
     smartSpeed: 450
   });

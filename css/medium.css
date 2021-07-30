@@ -32,6 +32,7 @@ h2 {
     position: relative;
     transform: none;
     top: auto;
+    z-index: 99999999999 !important;
 }
 
 #menu .icon-Nesea_Logo_RGB,#menuS .icon-Nesea_Logo_RGB {
@@ -134,7 +135,8 @@ h2 {
 }
 
 #corsi .corso-testo h2,.corso-testo h2{
-	margin-bottom:40px;
+	margin-bottom: 40px;
+    margin-top: -125px;
 }
 
 #corsi{
@@ -286,9 +288,10 @@ h2 {
 }
 
 .mcslider .box-right{
-    float:left;
-    width: 40%;
-    text-align: left;
+    direction: rtl;
+    float: left;
+    width: 43%;
+    text-align: right;
     padding: 0 10px;
     position: relative;
     display: inline-block;
@@ -297,9 +300,9 @@ h2 {
     /*top: 50%;
     transform: translateY(-50%);*/
      display: flex;
-  flex-direction: column;
-  justify-content: center;
-  resize: vertical;
+    flex-direction: column;
+    justify-content: center;
+    resize: vertical;
     height: 100%;
     margin-top: 0px;
     
@@ -328,10 +331,6 @@ h2 {
     font-size: 280px;
     top: 30px;
     left: -100px;
-    /* z-index: 3; */
-    /* transform: translateZ(0) skew(0deg, 3deg); */
-    /* -webkit-transform: translateZ(0) skew(0deg, 3deg); */
-
     width: 300px;
 }
 .i-bottom {
@@ -365,7 +364,7 @@ h2 {
 
 .section.mcs{
     padding: 180px 0;
-    padding-bottom:300px;
+    /* padding-bottom:300px; */
 }
 
 .dialog-info .dialog-info-buttons .mcbutton{
