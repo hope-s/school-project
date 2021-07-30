@@ -545,7 +545,7 @@ p.min {
     padding: 13px 27px;
     color: #4f4f4f;
     font-family: Panton_Bold;
-    font-size: 15px;
+    font-size: 14px;
     display: inline-block;
     position: relative;
     transition: .3s ease all;
@@ -2432,7 +2432,6 @@ a.slide_btn {
 }
 
 .zoom-box img {
-    transition: outline 0.2s ease;
     margin: 10px 1.5%;
     padding: 0;
     /*flex-grow: 0;
@@ -2440,16 +2439,12 @@ a.slide_btn {
     flex-basis:;
     auto*/flex: 0 1 300px;
     /*eachimageremails300pxwide*/_flex: 0 1 auto;
-    -webkit-transition: outline 0.2s ease;
-    -moz-transition: outline 0.2s ease;
-    -ms-transition: outline 0.2s ease;
-    -o-transition: outline 0.2s ease;
 }
 
-.zoom-box .zoomimg:hover {
-	cursor: zoom-in;
-	outline: .05px solid #000;
-	opacity: 0.85;
+.zoomimg:hover {
+    cursor: zoom-in ;
+    outline: .02px solid rgb(110, 109, 109);
+    opacity: 0.85;
 }
 
 .zoom-box.scale50 {
