@@ -1338,14 +1338,13 @@ p.min {
         margin-top: 44px;
     }
 
-    #pre-footer .footer-copy-right {
-        position: absolute;
+    /* #pre-footer .footer-copy-right {
         left: 54% !important;
         bottom: 0%;
         width: 97%;
         right: 106px;
         color: #fff;
-    }
+    } */
 
     .footer-links{
         left: 30% ;
