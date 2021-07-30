@@ -1278,7 +1278,7 @@ p.min {
     color: #fff !important;
     z-index: 999;
 }
-
+/* 
 #pre-footer .footer-copy-right {
     position: absolute;
     bottom: 0px;
@@ -1289,7 +1289,7 @@ p.min {
 #pre-footer .footer-copy-right p{
     color: #fff;
     bottom: 0;
-}
+} */
 
 .footer-links a{
     display: block;
