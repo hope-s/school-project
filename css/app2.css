@@ -1338,14 +1338,6 @@ p.min {
         margin-top: 44px;
     }
 
-    /* #pre-footer .footer-copy-right {
-        left: 54% !important;
-        bottom: 0%;
-        width: 97%;
-        right: 106px;
-        color: #fff;
-    } */
-
     .footer-links{
         left: 30% ;
         top: 30% !important;
@@ -2888,7 +2880,7 @@ img.scale33 {
 
 .multisteps-form__content .multisteps-form-btns{
     display: flex;
-    margin-left: 42%;
+    justify-content: center;
 }
 
 .btn-hover-blue {
