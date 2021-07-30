@@ -1085,6 +1085,12 @@ p.min {
 }
 
 
+#mcslider-testimonianze .t-content {
+    text-align: right;
+    direction: rtl !important;
+}
+
+
 .box-content-icon {
     overflow: hidden !important;
     position: absolute;
