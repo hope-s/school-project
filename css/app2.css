@@ -1273,11 +1273,15 @@ p.min {
     z-index: 999;
 }
 
-#pre-footer p {
-    color: #fff;
+#pre-footer .footer-copy-right {
     position: absolute;
     bottom: 0px;
     right: 10%;
+}
+
+#pre-footer .footer-copy-right p{
+    color: #fff;
+    bottom: 0;
 }
 
 .footer-links a{
@@ -1312,31 +1316,20 @@ p.min {
     text-decoration: underline;
 }
 
-#pre-footer .bi-telegram {
+#pre-footer .footer-icons{
+    display: flex; 
     position: absolute;
-    bottom: 10%;
+    bottom: 0;
     margin-right: 10px !important;
-    left: 38%;
+    left: 34%;
     color: #fff;
     font-size: 20px !important;
 }
 
-#pre-footer .bi-instagram {
-    position: absolute;
-    bottom: 10%;
-    left: 35%;
+#pre-footer .footer-icons a{
     color: #fff;
-    font-size: 20px !important;
+    margin: 10px;
 }
-
-#pre-footer .bi-whatsapp {
-    position: absolute;
-    bottom: 10%;
-    left: 41%;
-    color: #fff;
-    font-size: 20px !important;
-}
-
 
 @media only screen and (max-width: 768px) {
     #pre-footer {
@@ -1345,40 +1338,24 @@ p.min {
         margin-top: 44px;
     }
 
-    #pre-footer p {
-        /* position: absolute;
+    #pre-footer .footer-copy-right {
+        position: absolute;
         left: 54% !important;
         bottom: 0%;
         width: 97%;
         right: 106px;
-        color: #fff   */
-        display: none;
-    }
-
-    #pre-footer .bi-telegram {
-        position: absolute;
-        bottom: 20%;
-        left: 35%;
         color: #fff;
-        font-size: 20px !important;
     }
 
-    #pre-footer .bi-whatsapp {
-        position: absolute;
-        bottom: 20%;
-        left: 45%;
-        color: #fff;
-        font-size: 20px !important;
+    .footer-links{
+        left: 30% ;
+        top: 30% !important;
     }
 
-    #pre-footer .bi-instagram {
-        position: absolute;
-        bottom: 20%;
-        left: 55%;
-        color: #fff;
-        font-size: 20px !important;
+    #pre-footer .footer-icons{
+        bottom: 14%;
+        left: 34%;
     }
-
 }
 
 #footer .mdiv-skew {
