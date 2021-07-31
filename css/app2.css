@@ -2759,13 +2759,13 @@ img.scale33 {
     /*content: "\f0f6" !important;
     */position: absolute;
     top: 5px;
-    right: calc(-50% - 13px / 2);
+    right: calc(-58% - 13px / 2);
     transition-property: all;
     transition-duration: 0.15s;
     transition-timing-function: linear;
     transition-delay: 0s;
     display: block;
-    width: 110%;
+    width: 119%;
     height: 5px;
     border-radius: 5px;
     content: '';
@@ -2809,6 +2809,8 @@ img.scale33 {
     height: 0;
     opacity: 0;
     visibility: hidden;
+    margin-right: auto !important;
+    margin-left: auto !important;
 }
 
 .multisteps-form__panel.js-active {
