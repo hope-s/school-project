@@ -1286,7 +1286,7 @@ p.min {
     width: 90%;
 }
 
-/* #pre-footer .footer-copy-right p{
+#pre-footer .footer-copy-right p{
     color: #fff;
     bottom: 0;
 }
@@ -1306,7 +1306,7 @@ p.min {
     left: 31%;
     top: 20%;
 }
- */
+
 @media only screen and (min-width: 768px) and (max-width: 1300px) {
     .footer-links{
         left: 5%;
@@ -3701,6 +3701,6 @@ ul li {
     .h-md-97{
         height: 97% !important;
     }
-    
+
 
 }
