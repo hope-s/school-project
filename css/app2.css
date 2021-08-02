@@ -2682,6 +2682,11 @@ img.scale33 {
     text-align: center !important;
 }
 
+.multisteps-form__description a{
+    word-break: break-all !important;
+}
+
+
 .multisteps-form__progress {
     display: grid;
     direction: rtl;
@@ -3693,10 +3698,6 @@ ul li {
     .p-md-0 {
         padding: 0px !important;
     }    
-
-    /* .facilities_h2{
-        margin-top: -30px !important; 
-    } */
 
     .h-md-97{
         height: 97% !important;
