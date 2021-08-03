@@ -2890,7 +2890,7 @@ img.scale33 {
     -o-border-radius: 4px;
     direction: rtl !important;
     color: #05DBF2 !important;
-    text-align: right !important;
+    text-align: justify !important;
 
 }
 
@@ -2904,7 +2904,7 @@ img.scale33 {
 .multisteps-form__content ul li{
     list-style-type: circle !important;
     color: #05DBF2 !important;
-    text-align: right !important;
+    text-align: justify !important;
     margin-right: 10px !important; 
 
 }
