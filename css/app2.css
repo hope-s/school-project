@@ -2741,14 +2741,14 @@ img.scale33 {
 }
 
 .multisteps-form__progress-btn1::before{
-    content: "\f265";
+    content: "\f4d4";
     font-family: bootstrap-icons !important;
     z-index: 9999999 !important;
     
 }
 
 .multisteps-form__progress-btn2::before{
-    content: "\f4d4";
+    content: "\f265";
     font-family: bootstrap-icons !important;
     z-index: 9999999 !important;
     
@@ -2764,13 +2764,13 @@ img.scale33 {
     /*content: "\f0f6" !important;
     */position: absolute;
     top: 5px;
-    right: calc(-58% - 13px / 2);
+    right: calc(-55% - 13px / 2);
     transition-property: all;
     transition-duration: 0.15s;
     transition-timing-function: linear;
     transition-delay: 0s;
     display: block;
-    width: 119%;
+    width: 112%;
     height: 5px;
     border-radius: 5px;
     content: '';
@@ -2804,6 +2804,7 @@ img.scale33 {
 
 .multisteps-form__form {
     position: relative;
+    margin-top: 14px;
 }
 
 .multisteps-form__panel {
@@ -2882,15 +2883,33 @@ img.scale33 {
 .multisteps-form__content p{
     border: 1px solid #007bff;
     padding: 20px;
+    margin-top: 10px;
     border-radius: 4px;
-    color: #05DBF2 !important;
-    text-align: right !important;
     -webkit-border-radius: 4px;
     -moz-border-radius: 4px;
     -ms-border-radius: 4px;
     -o-border-radius: 4px;
     direction: rtl !important;
+    color: #05DBF2 !important;
+    text-align: right !important;
+
 }
+
+.multisteps-form__content ul{
+    border: 1px solid #007bff;
+    padding: 20px;
+    margin-top: 10px;
+    border-radius: 4px;
+}
+
+.multisteps-form__content ul li{
+    list-style-type: circle !important;
+    color: #05DBF2 !important;
+    text-align: right !important;
+    margin-right: 10px !important; 
+
+}
+
 
 .multisteps-form__content .multisteps-form-btns{
     display: flex;
