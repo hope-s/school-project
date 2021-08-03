@@ -2757,7 +2757,6 @@ img.scale33 {
     content: "\f271";
     font-family: bootstrap-icons !important;
     z-index: 9999999 !important;
-    
 }
 
 .multisteps-form__progress-btn:after {
@@ -3722,5 +3721,16 @@ ul li {
         height: 97% !important;
     }
 
+    .multisteps-form__progress-btn1::before{
+        font-size: 35px;
+    }
+    
+    .multisteps-form__progress-btn2::before{
+        font-size: 35px;        
+    
+    }.multisteps-form__progress-btn3::before{
+        font-size: 35px;
+    }
+    
 
 }
