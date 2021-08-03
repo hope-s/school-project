@@ -2891,6 +2891,7 @@ img.scale33 {
     direction: rtl !important;
     color: #05DBF2 !important;
     text-align: justify !important;
+    line-height: 30px;
 
 }
 
@@ -2899,6 +2900,7 @@ img.scale33 {
     padding: 20px;
     margin-top: 10px;
     border-radius: 4px;
+    line-height: 32px;
 }
 
 .multisteps-form__content ul li{
